@@ -1,0 +1,20 @@
+@import "../styles/colors.scss";
+
+.home-page {
+  height: 100vh;
+  background: linear-gradient(to right bottom, transparent 50%, $orange-5 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  &__image {
+    position: relative;
+    width: 624px;
+    height: 367px;
+  }
+
+  &__right {
+    max-width: 624px;
+  }
+}

@@ -1,10 +1,23 @@
 import Link from "next/link";
+import "./page.scss";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Who wants to be a millionaire?</h1>
-      <Link href="/play">Start</Link>
+    <div className="home-page">
+      <div className="home-page__image">
+        <Image
+          src="/thumbsUp.svg"
+          alt="Thumbs Up"
+          fill
+          // sizes="(max-width: 768px) 300px"
+        />
+      </div>
+
+      <div className="home-page__right">
+        <h1>Who wants to be a millionaire?</h1>
+        <Link href="/play">Start</Link>
+      </div>
     </div>
   );
 }
