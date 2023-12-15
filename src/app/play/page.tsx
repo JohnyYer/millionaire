@@ -31,7 +31,11 @@ function Play() {
         <div className="play-area__board-answers">
           {answers.map((answer) => (
             <div key={answer.text} className="play-area__board-answers-block">
-              <AnswerBlock type="correct" />
+              <AnswerBlock type="inactive" />
+              <div className="play-area__board-answers-block-text">
+                <span>A</span>
+                {answer.text}
+              </div>
             </div>
           ))}
         </div>

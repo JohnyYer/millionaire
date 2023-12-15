@@ -24,7 +24,27 @@
       row-gap: 32px;
 
       &-block {
+        :hover {
+          fill: $white;
+          stroke: $orange-100;
+        }
+
         height: 72px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &-text {
+          position: absolute;
+          font-size: 20px;
+          pointer-events: none;
+          span {
+            color: $orange-100;
+            padding: 0 8px 0 42px;
+            font-weight: 600;
+          }
+        }
       }
     }
   }
