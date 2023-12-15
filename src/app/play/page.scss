@@ -49,7 +49,27 @@
     }
   }
 
-  &__score-sidebar {
+  &__sidebar {
     width: 376px;
+    display: flex;
+    align-items: center;
+
+    &-score {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &-block {
+        position: relative;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-text {
+          position: absolute;
+        }
+      }
+    }
   }
 }

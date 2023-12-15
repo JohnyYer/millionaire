@@ -1,5 +1,6 @@
 import AnswerBlock from "@/components/AnswerBlock";
 import "./page.scss";
+import ScoreBlock from "@/components/ScoreBlock";
 
 function Play() {
   const answers = [
@@ -18,6 +19,39 @@ function Play() {
     {
       text: "10 years",
       isCorrect: true,
+    },
+  ];
+
+  const questions = [
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
+    },
+    {
+      price: "$1,000,000",
     },
   ];
 
@@ -41,7 +75,21 @@ function Play() {
         </div>
       </div>
 
-      <div className="play-area__score-sidebar">score</div>
+      <div className="play-area__sidebar">
+        <div className="play-area__sidebar-score">
+          {questions.map((question) => (
+            <div
+              key={question.price}
+              className="play-area__sidebar-score-block"
+            >
+              <ScoreBlock type="future" />
+              <div className="play-area__sidebar-score-block-text">
+                {question.price}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
