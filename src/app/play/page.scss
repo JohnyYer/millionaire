@@ -1,0 +1,35 @@
+@import "../../styles/colors.module.scss";
+
+.play-area {
+  display: flex;
+
+  &__board {
+    flex: auto;
+    background-color: $black-5;
+    height: 100vh;
+    padding: 133px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 395px;
+
+    &-question {
+      font-size: 32px;
+      max-width: 624px;
+    }
+
+    &-answers {
+      display: flex;
+      max-width: 810px;
+      flex-wrap: wrap;
+      row-gap: 32px;
+
+      &-block {
+        height: 72px;
+      }
+    }
+  }
+
+  &__score-sidebar {
+    width: 376px;
+  }
+}
