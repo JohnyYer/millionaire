@@ -1,6 +1,6 @@
-import Link from "next/link";
 import "./page.scss";
 import Image from "next/image";
+import ButtonLink from "@/components/ButtonLink";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className="home-page__right">
         <h1>Who wants to be a millionaire?</h1>
-        <Link href="/play">Start</Link>
+        <ButtonLink text="Start" href="/play" />
       </div>
     </div>
   );

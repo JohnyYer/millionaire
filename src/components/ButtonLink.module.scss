@@ -1,0 +1,19 @@
+@import "../styles/colors.scss";
+
+.button {
+  background-color: $orange-100;
+  width: 296px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $orange-80;
+  }
+}

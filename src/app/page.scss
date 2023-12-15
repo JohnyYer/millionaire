@@ -16,5 +16,9 @@
 
   &__right {
     max-width: 624px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
   }
 }
