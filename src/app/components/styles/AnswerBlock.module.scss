@@ -10,4 +10,7 @@
   @media (max-width: $desktop) {
     width: 405px;
   }
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
 }
