@@ -1,8 +1,12 @@
+"use client";
+
 import "./page.scss";
 import Image from "next/image";
 import ButtonLink from "@/app/components/ButtonLink";
+import { UseGameContext } from "./context/game-context";
 
 export default function Home() {
+  const { startNewGame } = UseGameContext();
   return (
     <div className="home-page">
       <div className="home-page__image">
@@ -16,7 +20,7 @@ export default function Home() {
 
       <div className="home-page__right">
         <h1>Who wants to be a millionaire?</h1>
-        <ButtonLink text="Start" href="/play" />
+        <ButtonLink text="Start" href="/play" onClick={() => startNewGame()} />
       </div>
     </div>
   );

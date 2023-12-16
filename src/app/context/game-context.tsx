@@ -1,7 +1,9 @@
 "use client";
 
 import {
+  Dispatch,
   ReactNode,
+  SetStateAction,
   createContext,
   useCallback,
   useContext,
@@ -29,6 +31,9 @@ type GameContextT = {
   gameQuestions: GameObject;
   currentQuestion: number;
   nextQuestion: () => void;
+  startNewGame: () => void;
+  setFinalScore: Dispatch<SetStateAction<number>>;
+  finalScore: number;
 };
 
 export const GameContext = createContext<GameContextT | null>(null);
@@ -37,11 +42,17 @@ export default function GameContextProvider({
   children,
 }: GameContextProviderProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [finalScore, setFinalScore] = useState(0);
 
-  const nextQuestion = useCallback(
-    () => setCurrentQuestion((current) => current + 1),
-    [setCurrentQuestion]
-  );
+  const nextQuestion = useCallback(() => {
+    setFinalScore(GameQuestions.questions[currentQuestion].price);
+    setCurrentQuestion((current) => current + 1);
+  }, [setCurrentQuestion, setFinalScore, currentQuestion]);
+
+  const startNewGame = () => {
+    setFinalScore(0);
+    setCurrentQuestion(0);
+  };
 
   return (
     <GameContext.Provider
@@ -50,6 +61,9 @@ export default function GameContextProvider({
         gameQuestions: GameQuestions,
         currentQuestion,
         nextQuestion,
+        startNewGame,
+        setFinalScore,
+        finalScore,
       }}
     >
       {children}

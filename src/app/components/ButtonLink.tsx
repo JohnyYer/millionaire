@@ -5,11 +5,12 @@ import styles from "./ButtonLink.module.scss";
 type Props = {
   text: string;
   href: string;
+  onClick?: () => void;
 };
 
-function ButtonLink({ href, text }: Props) {
+function ButtonLink({ href, text, onClick }: Props) {
   return (
-    <Link href={href} className={styles.button}>
+    <Link href={href} className={styles.button} onClick={onClick}>
       {text}
     </Link>
   );
