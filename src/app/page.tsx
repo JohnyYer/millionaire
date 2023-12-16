@@ -1,6 +1,6 @@
 import "./page.scss";
 import Image from "next/image";
-import ButtonLink from "@/components/ButtonLink";
+import ButtonLink from "@/app/components/ButtonLink";
 
 export default function Home() {
   return (

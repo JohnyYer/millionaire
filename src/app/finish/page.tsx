@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ButtonLink from "@/components/ButtonLink";
+import ButtonLink from "@/app/components/ButtonLink";
 import "./page.scss";
 
 function Finish() {

@@ -1,0 +1,91 @@
+{
+  "questions": [
+    {
+      "question": "In what children's game are participants chased by someone designated \"It\"?",
+      "content": ["Tag", "Simon Says", "Charades", "Hopscotch"],
+      "correct": 0,
+      "price": 500
+    },
+    {
+      "question": "On a radio, stations are changed by using what control?",
+      "content": ["Tuning", "Volume", "Bass", "Treble"],
+      "correct": 0,
+      "price": 1000
+    },
+    {
+      "question": "A college graduate who receives a B.S. degree holds what official title?",
+      "content": [
+        "Bachelor of science",
+        "Business scholar",
+        "Baccalaureate staff",
+        "Brainy student"
+      ],
+      "correct": 0,
+      "price": 2000
+    },
+    {
+      "question": "Which of the following telephone area codes is not a toll-free call in the United States?",
+      "content": ["800", "828", "877", "888"],
+      "correct": 1,
+      "price": 4000
+    },
+    {
+      "question": "What part of the human body does glaucoma directly affect?",
+      "content": ["Ear", "Nose", "Throat", "Eye"],
+      "correct": 3,
+      "price": 8000
+    },
+    {
+      "question": "What is the name of Tom Cruise's character in the \"Mission: Impossible\" movies?",
+      "content": [
+        "Frank Mackey",
+        "Mitch McDeere",
+        "Joel Goodson",
+        "Ethan Hunt"
+      ],
+      "correct": 3,
+      "price": 16000
+    },
+    {
+      "question": "Which of these materials is used to make vests bulletproof?",
+      "content": ["Kevlar", "Lycra", "Gore-tex", "Polystyrene"],
+      "correct": 0,
+      "price": 32000
+    },
+    {
+      "question": "What animal's name means \"river horse\" in Greek?",
+      "content": ["Platypus", "Hippopotamus", "Rhinoceros", "Manatee"],
+      "correct": 1,
+      "price": 64000
+    },
+    {
+      "question": "To take advantage of the earth's rotation, NASA launches most of its rockets in what direction?",
+      "content": ["North", "East", "South", "West"],
+      "correct": 1,
+      "price": 125000
+    },
+    {
+      "question": "College football's Independence Bowl is played in what city?",
+      "content": ["Philadelphia", "Memphis", "Shreveport", "Tucson"],
+      "correct": 2,
+      "price": 250000
+    },
+    {
+      "question": "Which of these best describes music that is played \"pianissimo\"?",
+      "content": ["Very soft", "Very fast", "Moderately loud", "Loud"],
+      "correct": 0,
+      "price": 500000
+    },
+    {
+      "question": "In Greek mythology, what is the relationship between Oedipus and Antigone?",
+      "content": [
+        "Husband and wife",
+        "Mentor and student",
+        "Father and daughter",
+        "Mother and son"
+      ],
+      "correct": 2,
+      "price": 1000000
+    }
+  ]
+}
