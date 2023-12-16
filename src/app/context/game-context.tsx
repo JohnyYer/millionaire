@@ -36,7 +36,6 @@ export const GameContext = createContext<GameContextT | null>(null);
 export default function GameContextProvider({
   children,
 }: GameContextProviderProps) {
-  // const [gameObject, setGameObject] = useState(GameQuestions);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const nextQuestion = useCallback(
