@@ -1,3 +1,5 @@
+@import "./styles/variables.module.scss";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,4 +15,74 @@ body {
 h1 {
   font-size: 56px;
   line-height: 64.96px;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 37.12px;
+    text-align: center;
+  }
+}
+
+.base-layout {
+  &.gradient {
+    background: linear-gradient(
+      to right bottom,
+      transparent 50%,
+      $orange-5 50%
+    );
+  }
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  &__image {
+    position: relative;
+    width: 624px;
+    height: 367px;
+  }
+
+  &__right {
+    max-width: 624px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    &-score {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      p {
+        font-size: 32px;
+        color: $black-40;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding: 0 16px;
+
+    &__image {
+      width: 288px;
+      height: 192px;
+    }
+
+    &__right {
+      gap: 102px;
+
+      &-score {
+        align-items: center;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

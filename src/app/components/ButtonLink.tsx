@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from "./ButtonLink.module.scss";
+import styles from "./styles/ButtonLink.module.scss";
 
 type Props = {
   text: string;

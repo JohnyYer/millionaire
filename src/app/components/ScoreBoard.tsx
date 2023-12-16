@@ -8,6 +8,7 @@ function ScoreBoard() {
   const { gameQuestions, currentQuestion } = UseGameContext();
 
   const scoreBlockType = useCallback(
+    // TODO: refactor; move to constants
     (index: number) => {
       if (currentQuestion === index) {
         return "current";

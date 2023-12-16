@@ -1,4 +1,5 @@
-import colors from "../styles/colors.module.scss";
+import colors from "../styles/variables.module.scss";
+import styles from "./styles/AnswerBlock.module.scss";
 
 const TYPES = {
   selected: {
@@ -26,8 +27,7 @@ type Props = {
 function AnswerBlock({ type }: Props) {
   return (
     <svg
-      width="405"
-      height="72"
+      className={styles.answer}
       viewBox="0 0 405 72"
       xmlns="http://www.w3.org/2000/svg"
       stroke={TYPES[type].stroke}

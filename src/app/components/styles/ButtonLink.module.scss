@@ -1,4 +1,4 @@
-@import "../styles/colors.module.scss";
+@import "../../styles/variables.module.scss";
 
 .button {
   background-color: $orange-100;
@@ -15,5 +15,12 @@
 
   &:hover {
     background-color: $orange-80;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    min-width: 288px;
+    height: 48px;
+    border-radius: 8px;
   }
 }

@@ -2,15 +2,14 @@
 
 import Image from "next/image";
 import ButtonLink from "@/app/components/ButtonLink";
-import "./page.scss";
 import { UseGameContext } from "../context/game-context";
 
 function Finish() {
   const { finalScore } = UseGameContext();
 
   return (
-    <div className="finish-page">
-      <div className="finish-page__image">
+    <div className="base-layout">
+      <div className="base-layout__image">
         <Image
           src="/thumbsUp.svg"
           alt="Thumbs Up"
@@ -19,8 +18,8 @@ function Finish() {
         />
       </div>
 
-      <div className="finish-page__right">
-        <div className="finish-page__right-score">
+      <div className="base-layout__right">
+        <div className="base-layout__right-score">
           <p>Total score:</p>
           <h1>${finalScore} earned</h1>
         </div>

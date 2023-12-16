@@ -1,4 +1,6 @@
-import colors from "../styles/colors.module.scss";
+import colors from "../styles/variables.module.scss";
+import styles from "./styles/ScoreBlock.module.scss";
+
 // We could reduce this collection; But I will leave it as is for consistancy and ability to change colors in future
 const TYPES = {
   current: {
@@ -22,8 +24,7 @@ type Props = {
 function ScoreBlock({ type }: Props) {
   return (
     <svg
-      width="376"
-      height="40"
+      className={styles.score}
       viewBox="0 0 376 40"
       stroke={TYPES[type].stroke}
       fill={TYPES[type].fill}

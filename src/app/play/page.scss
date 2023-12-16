@@ -1,4 +1,4 @@
-@import "../styles/colors.module.scss";
+@import "../styles/variables.module.scss";
 
 .play-area {
   display: flex;
@@ -73,6 +73,16 @@
         &.past {
           color: $black-40;
         }
+      }
+    }
+  }
+
+  @media (max-width: $desktop) {
+    &__board {
+      gap: 150px;
+
+      &-answers {
+        justify-content: center;
       }
     }
   }

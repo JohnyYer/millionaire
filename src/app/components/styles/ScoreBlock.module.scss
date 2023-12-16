@@ -1,0 +1,10 @@
+@import "../../styles/variables.module.scss";
+
+.score {
+  width: 376px;
+  height: 40px;
+
+  @media (max-width: $laptop) {
+    width: 278px;
+  }
+}
